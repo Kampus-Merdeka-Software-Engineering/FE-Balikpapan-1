@@ -6,5 +6,5 @@ let swiper = new Swiper(".mySwiper",{
     autoPlay:{
         delay:2500,
         disabledOnInteraction:false,
-    },
+    }
 })
