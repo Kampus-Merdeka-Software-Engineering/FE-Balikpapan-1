@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+/* Public */
+a{
+    text-decoration: none;
+    color: #444;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+header{
+    color: #444;
+}
+
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 4%;
+}
+
+.topbar .support ul{
+    display: flex;
+    list-style: none;
+}
+
+.topbar .support ul li{
+    margin-right: 20px;
+}
+
+.topbar .support ul li i{
+    margin-right: 8px;
+}
+
+.topIcons i{
+    margin-right: 20px;
+}
+
+/* Navbar */
+nav{
+    background-color: #1574d0;
+    padding: 1.5rem 4%;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li{
+    margin-right: 20px;
+}
+
+nav a{
+    color: #fff;
+}
+
+
+/* Banner */
+.banner{
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner .card1{
+    background-image: url('bg2.png');
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 4%;
+}
+
+.banner .card2{
+    background-image: url('bg.png');
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 4%;
+}
+
+.banner .card h1{
+    color: #fff;
+    font-size: 80px;
+    font-weight: bolder;
+}
+
+.banner .card p{
+    font-size: 30px;
+    margin-top: -20px;
+}
+
+.banner button{
+    padding: 10px 25px;
+    border: none;
+    background-color: #1574d0;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.banner .card2 .contentText{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+/* Categori */
+.category, .petFood{
+    margin-top: 100px;
+    padding: 0 4%;
+}
+
+.category .title, .petFood .title{
+    text-align: center;
+}
+
+.category .title h3, .petFood .title{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.category .contentCategory{
+    margin-top: 30px;
+}
+
+.category .card{
+    width: fit-content;
+    overflow: hidden;
+    height: fit-content;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.category .card:hover img{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.petFood .categoryFood ul{
+    list-style: none;
+    display: flex;
+}
+
+.petFood .categoryFood ul li{
+    margin-right: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.petFood .categoryFood{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.petFood ul li:hover{
+    color: orange;
+}
+
+.foodContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 50px;
+    margin-top: 50px;
+}
+
+.foodContent .card, .specialFood .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    text-align: center;
+}
+
+.foodContent .images, .specialFood .images{
+    position: relative;
+    overflow: hidden;
+}
+
+.foodContent .details, .specialFood .details{
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.foodContent .card:hover .details, .specialFood .card:hover .details{
+    bottom: 20px;
+    transition: 0.5s;
+}
+
+.foodContent .details i, .specialFood .details i{
+    margin-right: 20px;
+    background-color: #1574d0;
+    color: #fff;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.foodContent img, .specialFood img{
+    width: 250px;
+}
+
+.ratting{
+    margin-top: 10px;
+    color: gold;
+}
+
+.foodContent .card h3{
+    margin: 10px 0;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+}
+
+.price li{
+    margin-right: 20px;
+}
+
+.price li:nth-child(1){
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.price li:nth-child(2){
+    text-decoration: line-through;
+    color: gray;
+}
+
+.foodie{
+    background-image: url('bg3.webp');
+    margin-top: 50px;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 4%;
+    display: flex;
+    align-items: center;
+}
+
+.petfoods, .fooder{
+    width: 100%;
+}
+
+.fooder .card{
+    width: 300px;
+}
+
+.specialFood{
+    margin-top: 100px;
+}
+
+.specialFood .title{
+    text-align: center;
+}
+
+.specialFood .title h3{
+    font-size: 30px;
+}
+
+.specialFood{
+    padding: 0 4%;
+}
+
+.specialContent{
+    margin-top: -20px;
+}
+
+/* Sale */
+.sale{
+    padding: 0 4%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sale .card1{
+    background-image: url('productBanner1.webp');
+    height: 300px;
+    width: 600px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.sale .card2{
+    background-image: url('productBanner2.webp');
+    height: 300px;
+    width: 600px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* News */
+.news{
+    margin-top: 50px;
+    padding: 0 4%;
+}
+
+.news .title{
+    text-align: center;
+}
+
+.news .title h3{
+    font-size: 30px;
+}
+
+.newsContent{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newsContent .card{
+    width: 400px;
+    position: relative;
+}
+
+.newsContent .card img{
+    width: 100%;
+}
+
+.newsContent .card p{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.dates{
+    position: absolute;
+    top: 0;
+    background-color: orangered;
+    padding: 10px;
+    color: white;
+}
+
+/* Sponsored */
+.sponsored{
+    margin-top: 80px;
+    padding: 0 4%;
+}
+
+.sponsored .card{
+    width: fit-content;
+}
+
+/* Promote */
+.promote{
+    background-color: #fd783e;
+    padding: 6rem 4%;
+    background-image: url('bg4.webp');
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.promote h3{
+    color: #fff;
+    font-size: 40px;
+}
+
+.promote h4{
+    background-color: yellow;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 30px;
+}
+
+/* Footer */
+footer{
+    background-color: #1574d0;
+    padding: 4%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer{
+    max-width: 350px;
+}
+
+.footer1 ul{
+    list-style: none;
+}
+
+.first{
+    margin-top: 20px;
+}
+
+.footer1 ul li{
+    margin-bottom: 10px;
+}
+
+.footer1 i{
+    margin-right: 7px;
+}
+
+footer a{
+    color: #fff;
+}
+
+.second{
+    margin-top: 20px;
+    list-style: none;
+}
+
+.second li{
+    margin-bottom: 13px;
+}
+
+.footer4 p{
+    margin-top: 13px;
+}
