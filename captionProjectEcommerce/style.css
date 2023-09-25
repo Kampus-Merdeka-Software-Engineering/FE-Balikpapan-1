@@ -865,6 +865,119 @@ footer .copyright{
 }
 
 /* Cart Page */
+#cart{
+  overflow-x: auto;
+}
+#cart table{
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+}
+
+#cart table img{
+  width: 70px;
+}
+
+#cart table td:nth-child(1){
+  width: 100px;
+  text-align: center;
+}
+
+#cart table td:nth-child(2){
+  width: 150px;
+  text-align: center;
+}
+
+#cart table td:nth-child(3){
+  width: 250px;
+  text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+  width: 150px;
+  text-align: center;
+}
+
+#cart table td:nth-child(5) input{
+  width: 70px;
+  padding: 10px 5px 10px 15px;
+}
+
+#cart table thead {
+  border: 1px solid #e2e9e1;
+  border-left: none;
+  border-right: none;
+}
+
+#cart table thead td{
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 10px 0;
+}
+
+#cart table thead tr td {
+  padding-top: 15px;
+}
+
+#cart table thead td {
+  font-size: 13px;
+}
+
+#cart-add {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#coupon {
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+#coupon h3,
+#subtotal h3 {
+  padding-bottom: 15px;
+}
+
+#coupon input{
+  padding: 10px 20px;
+  outline: none;
+  width: 60%;
+  margin-right: 10px;
+  border: 1px solid #e2e9e1;
+}
+
+#coupon button,
+#subtotal button{
+  background-color: #041e42;
+  color: #fff;
+  padding: 12px 20px;
+}
+
+#subtotal{
+  width: 50%;
+  margin-bottom: 30px;
+  border: 1px solid #e2e9e1;
+  padding: 30px;
+}
+
+#subtotal table{
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#subtotal table td{
+  width: 50%;
+  border: 1px solid #e2e9e1;
+  padding: 10px;
+  font-size: 13px;
+}
+
 
 
 /* Responsif */
@@ -887,8 +1000,6 @@ footer .copyright{
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.06);
     padding: 80px 0 0 10px;
     transition: 0.3s;
-
-
 }
 #navbar.active{
   right: 0px;
@@ -896,6 +1007,25 @@ footer .copyright{
 }
 #navbar li{
   margin-bottom: 25px;
+}
+
+#mobile{
+  display: flex;
+  align-items: center;
+}
+#mobile i{
+  color: #1e2025;
+  font-size: 24px;
+  padding-left: 20px;
+}
+
+#close{
+  display: initial;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: #1e2025;
+  font-size: 24px;
 }
 
 /* Contact Page*/
@@ -948,23 +1078,7 @@ footer .copyright{
 #newsletter .form {
   width: 100%;
 }
-#mobile{
-  display: flex;
-  align-items: center;
-}
-#mobile i{
-  color: #1e2025;
-  font-size: 24px;
-  padding-left: 20px;
-}
-#close{
-  display: initial;
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  color: #1e2025;
-  font-size: 24px;
-}
+
 #lg-bag {
   display: none;
 }
@@ -1031,5 +1145,16 @@ footer .copyright{
 #form-details form {
   width: 100%;
   margin-bottom: 30px;
+}
+
+/* Cart page */
+#cart-add {
+  flex-direction: column;
+}
+#coupon{
+  width: 100%;
+}#subtotal {
+  width: 100%;
+  padding: 20px;
 }
 }

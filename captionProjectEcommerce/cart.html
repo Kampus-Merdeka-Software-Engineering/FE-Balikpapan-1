@@ -5,18 +5,162 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+        <title>Capston Project</title>
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
 
+        <section id="header">
+            <a href="#"><img src="img/hits.png" class="logo" alt=""></a>
+
+            <div>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a  class="active" href="cart.html"><i class="uil uil-shopping-bag"></i></a></li>
+                    <a href="#" id="close"><i class="uil uil-times"></i></a>
+                </ul>
+            </div>
+            <div id="mobile">
+                <a href="cart.html"><i class="uil uil-shopping-bag"></i></a>
+                <i id="bar" class="uil uil-bars"></i>
+            </div>
+        </section>
+        <section id="page-header" class="about-header">
+
+            <h2>#Let's_talk</h2>
+
+            <p>LEAVE A MASSAGE. We love to hear from you!</p>
+
+        </section>
+        <section id="cart" class="section-p1">
+            <table widht="100%">
+                <thead>
+                    <tr>
+                        <td>Remove</td>
+                        <td>Image</td>
+                        <td>Product</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        <td>Subtotal</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#"><i class="uil uil-minus-circle"></i></a></i></td>
+                        <td><img src="img/products/f1.jpg" alt=""></td>
+                        <td>Men's Fashion Shirt</td>
+                        <td>$83</td>
+                        <td><input type="number" value="1"></td>
+                        <td>$83</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#"><i class="uil uil-minus-circle"></i></a></i></td>
+                        <td><img src="img/products/f2.jpg" alt=""></td>
+                        <td>Men's Fashion Shirt</td>
+                        <td>$83</td>
+                        <td><input type="number" value="1"></td>
+                        <td>$83</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#"><i class="uil uil-minus-circle"></i></a></i></td>
+                        <td><img src="img/products/f3.jpg" alt=""></td>
+                        <td>Men's Fashion Shirt</td>
+                        <td>$83</td>
+                        <td><input type="number" value="1"></td>
+                        <td>$83</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="cart-add" class="section-p1">
+            <div id="coupon">
+                <h3>Apply Coupon</h3>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+
+            <div id="subtotal">
+                <h3>Cart Total</h3>
+                <table>
+                    <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$ 249</td>
+                    </tr>
+                    <tr>
+                        <td>Shipping</td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td><Strong>Total</Strong></td>
+                        <td><Strong>$ 249</Strong></td>
+                    </tr>
+                </table>
+                <button class="normal">Proceed to checkout</button>
+            </div>
+        </section>
+       
+        <footer class="section-p1">
+            <div class="col">
+                <img class="logo" src="img/hits.png" alt="">
+                <h4>Contact</h4>
+                <p><strong>Address:</strong> Jl. DR. Ide Anak Agung Gde Agung, Kuningan Tim, Kecamatan Setiabudi, DKI Jakarta</p>
+                <p><strong>Phone:</strong> +62 8263 8191 738 / +62 6352 9988 90 </p>
+                <p><strong>Hours:</strong> 08:00-21:00, Mon - Sat </p>
+                <div class="Follow">
+                    <h4>Follow Us</h4>
+                    <div class="icon">
+                        <i class="uil uil-facebook"></i>
+                        <i class="uil uil-twitter"></i>
+                        <i class="uil uil-instagram-alt"></i>
+                        <i class="uil uil-youtube"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Condition</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track my order</a>
+                <a href="#">Help</a>
+            </div>
+
+            <div class="col Install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="">
+            </div>
+
+            <div class="copyright">
+                <p>© 2023. RevoU - Capstone Projects Team-A-1 Ecommerce </p>
+            </div>
+
+
+        </footer>
 
         <script src="script.js"></script>
-
     </body>
 
 </html>
