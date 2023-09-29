@@ -136,35 +136,65 @@ align-items: center;
   display: none;
 }
 
-.container-carausel {
+#hero {
   height: 90vh;
   width: 100%;
-  background-size: cover;
-  background-position: top 40% right 0%;
-  padding: 0 80px;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.carousel-slide {
-  flex: 0 0 auto;
-  width: 100%;
-  transition: transform 0.5s ease-in-out;
+.image-container.active {
+  opacity: 1;
+  z-index: 0; /* Lower z-index to place it behind content */
 }
 
-#hero{ 
-  height: 90vh;
-  width: 100%;
+.content-container {
+  flex: 0 0 50%; /* Adjust the content width as needed */
+  padding: 20px;
   background-size: cover;
-  background-position: top 40% right 0%;
-  padding: 0 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  background-position: center;
+  position: relative; /* Add this for z-index to work */
+  z-index: 1; /* Higher z-index to place it on top of image container */
 }
+
+.image-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  z-index: 0; /* Lower z-index to place it behind content */
+}
+
+/* Define the keyframes for the background and content slides */
+/* Define the keyframes for the background and content slides */
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+h4, h2, h1, p, button {
+  color: white; /* Set text color */
+  margin: 0; /* Remove default margins */
+  padding: 10px; /* Add padding to text elements */
+}
+
 #hero h4{
   padding-bottom: 15px;
   color:  rgb(34, 102, 141);

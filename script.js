@@ -13,25 +13,26 @@ if (close){
     })
 }
 
-const carouselContainer = document.querySelector('.carousel-container');
-const slides = document.querySelectorAll('.carousel-slide');
-let currentIndex = 0;
-let autoSlideInterval;
+const imageContainers = document.querySelectorAll('.image-container');
+let activeIndex = 0;
 
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.style.transform = `translateX(${100 * (i - index)}%)`;
-    });
+function updateSlides() {
+  imageContainers.forEach((container, index) => {
+    if (index === activeIndex) {
+      container.classList.add('active');
+    } else {
+      container.classList.remove('active');
+    }
+  });
 }
 
-function startAutoSlide() {
-    autoSlideInterval = setInterval(goToNextSlide, 2000); // Ganti 2000 dengan interval yang Anda inginkan (dalam milidetik)
+function slideNext() {
+  activeIndex = (activeIndex + 1) % imageContainers.length;
+  updateSlides();
 }
 
-function stopAutoSlide() {
-    clearInterval(autoSlideInterval);
-}
+// Initial setup
+updateSlides();
 
-// Tampilkan slide pertama saat halaman dimuat dan mulai otomatis
-showSlide(currentIndex);
-startAutoSlide();
+// Set up automatic sliding
+setInterval(slideNext, 5000); // Change image every 5 seconds
