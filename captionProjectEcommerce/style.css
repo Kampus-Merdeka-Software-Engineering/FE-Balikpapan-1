@@ -136,8 +136,25 @@ align-items: center;
   display: none;
 }
 
+.container-carausel {
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 40% right 0%;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.carousel-slide {
+  flex: 0 0 auto;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
 #hero{ 
-  background-image: url("img/Desktop - 2.png");
   height: 90vh;
   width: 100%;
   background-size: cover;
