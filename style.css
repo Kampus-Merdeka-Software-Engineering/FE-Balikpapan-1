@@ -528,6 +528,10 @@ color: #fff;
     color: #222;
    margin-bottom: 10px;
   }
+
+  footer h4, p {
+    color: #000;
+  }
   
 footer .Follow{
   margin-top: 20px;
