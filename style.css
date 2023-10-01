@@ -190,7 +190,7 @@ align-items: center;
 }
 
 h4, h2, h1, p, button {
-  color: white; /* Set text color */
+  color: rgb(0, 0, 0); /* Set text color */
   margin: 0; /* Remove default margins */
   padding: 10px; /* Add padding to text elements */
 }
