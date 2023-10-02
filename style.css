@@ -863,6 +863,7 @@ footer .copyright{
 #form-details{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 30px;
   padding: 80px;
   border: 1px solid #e1e1e1;
@@ -895,25 +896,49 @@ footer .copyright{
   align-items: flex-start;
 }
 
-#form-details .people img {
+#people .people img {
   width: 65px;
   height: 65px;
   object-fit: cover;
-  margin-right: 15px;
+  margin: 30px;
 }
 
-#form-details .people div p{
+#people .people div p{
   margin: 0;
-  font-size: 13px;
+  font-size: 10px;
   line-height: 25px;
 }
 
-#form-details .people div p span{
+#people .people div p span{
   display: block;
   font-size: 16px;
   font-weight: 600;
   color: #000;
 }
+
+#people .people {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+#people .people > div {
+  flex: 1;
+  max-width: 151px;
+  padding: 6px;
+  margin: 89px;
+}
+
+#people .people img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  margin: 0 auto 10px; /* Mengatur margin bawah untuk memberi ruang di bawah gambar */
+}
+
 
 /* Cart Page */
 #cart{
