@@ -862,7 +862,7 @@ footer .copyright{
 
 #form-details{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 30px;
   padding: 80px;
@@ -918,7 +918,7 @@ footer .copyright{
 
 #people .people {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
@@ -929,7 +929,7 @@ footer .copyright{
   flex: 1;
   max-width: 151px;
   padding: 6px;
-  margin: 89px;
+  margin: 30px;
 }
 
 #people .people img {
