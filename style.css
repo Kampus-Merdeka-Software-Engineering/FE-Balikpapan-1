@@ -704,7 +704,7 @@ footer .copyright{
 
 /* Blog page */
 #page-header.blog-header{
-  background-image: url(img/banner/b-20.png);
+  background-image: url(img/banner/b-19.png);
 }
 
 #blog {
@@ -862,7 +862,7 @@ footer .copyright{
 
 #form-details{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin: 30px;
   padding: 80px;
@@ -905,7 +905,7 @@ footer .copyright{
 
 #people .people div p{
   margin: 0;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 25px;
 }
 
@@ -918,10 +918,10 @@ footer .copyright{
 
 #people .people {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  /* gap: 20px; */
   text-align: center;
 }
 
@@ -929,12 +929,12 @@ footer .copyright{
   flex: 1;
   max-width: 151px;
   padding: 6px;
-  margin: 30px;
+  margin: 89px;
 }
 
 #people .people img {
-  width: 65px;
-  height: 65px;
+  width: 90px;
+  height: 90px;
   object-fit: cover;
   margin: 0 auto 10px; /* Mengatur margin bawah untuk memberi ruang di bawah gambar */
 }
@@ -1222,6 +1222,44 @@ footer .copyright{
   width: 100%;
   margin-bottom: 30px;
 }
+
+#people .people div p{
+  margin: 0;
+  font-size: 8px;
+  line-height: 13px;
+  padding: 6px;
+}
+
+#people .people div p span{
+  display: block;
+  font-size: 10px;
+  font-weight: 600;
+  color: #000;
+}
+
+#people .people {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: -17px;
+  text-align: center;
+}
+
+#people .people > div {
+  flex: 1;
+  max-width: 124px;
+  padding: -14px;
+  margin: 0px;
+}
+
+#people .people img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin: 0 auto 15px; /* Mengatur margin bawah untuk memberi ruang di bawah gambar */
+}
+
 
 /* Cart page */
 #cart-add {
