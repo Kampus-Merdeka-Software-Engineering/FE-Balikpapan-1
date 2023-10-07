@@ -5,7 +5,7 @@ const API_URL = "https://balikpapan-1-api.up.railway.app";
 const fetchCarts = async () => {
     const CartsContainer = document.getElementById("coba")
 
-    const Cart = await fetch(`${API_URL}/shop`)
+    const Cart = await fetch(`${API_URL}/cart`)
     const data = await Cart.json()
     console.log(data)
     //clear
