@@ -14,6 +14,7 @@ const API_URL = "https://balikpapan-1-api.up.railway.app";
                 const newProduct = document.createElement('div');
                 newProduct.classList.add('pro');
                 newProduct.innerHTML =`
+                <a href="sproduct.html?id=${element.id}">
                     <img src="${element.image}" alt="">
                     <div class="des">
                         <span>${element.brandname}</span>
@@ -27,6 +28,7 @@ const API_URL = "https://balikpapan-1-api.up.railway.app";
                         </div>
                         <h4>$${element.price}</h4>
                     </div>
+                    </a>
                     <a href="#"><i class="uil uil-shopping-cart cart"></i></a>`;
 
                 ProductsContainer.appendChild(newProduct);
