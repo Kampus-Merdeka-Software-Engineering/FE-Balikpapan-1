@@ -38,12 +38,12 @@ updateSlides();
 setInterval(slideNext, 5000); // Change image every 5 seconds
 
 
-fetch('http://localhost:3000/api/data')
-  .then(response => response.json())
-  .then(data => {
-    console.log(data);
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
+// fetch('http://localhost:3000/api/data')
+//   .then(response => response.json())
+//   .then(data => {
+//     console.log(data);
+//   })
+//   .catch(error => {
+//     console.error('Error:', error);
+//   });
 
