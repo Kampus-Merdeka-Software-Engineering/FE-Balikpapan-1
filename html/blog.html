@@ -5,25 +5,27 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Capston Project</title>
-        <!-- Css Icon -->
+        <title>Hits Shop</title>
+        <!-- Icon Css -->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
         <!-- Css Aos -->
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <!-- My Css -->
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    </head>
 
     <body>
 
         <section id="header">
-            <a href="#"><img src="img/hits.png" class="logo" alt=""></a>
+            <a href="#"><img src="../img/hits.png" class="logo" alt=""></a>
 
             <div>
                 <ul id="navbar">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="shop.html">Shop</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a class="active" href="about.html">About</a></li>
+                    <li><a class="active" href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="cart.html"><i class="uil uil-shopping-bag"></i></a></li>
                     <a href="#" id="close"><i class="uil uil-times"></i></a>
@@ -34,61 +36,20 @@
                 <i id="bar" class="uil uil-bars"></i>
             </div>
         </section>
-        <section id="page-header" class="about-header">
+        <section id="page-header" class="blog-header">
 
-            <h2 data-aos="fade-right" data-aos-easing="ease-in-sine">#KnowUs</h2>
+            <h2 data-aos="fade-right" data-aos-easing="ease-in-sine">#Readmore</h2>
 
-            <p data-aos="fade-left" data-aos-easing="ease-in-sine">Lorem ipsum dolor sit amet, consectetur</p>
+            <p data-aos="fade-left" data-aos-easing="ease-in-sine">Read all case studies about our products!</p>
 
         </section>
-        <section id="about-head" class="section-p1">
-            <img src="img/about/b-19.pgn" alt="">
-            <div>
-                <h2>Who We Are?</h2>
-
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, incidunt aut? Necessitatibus fuga alias dolores repellat animi recusandae optio harum. Provident odio tempore obcaecati temporibus vero quasi adipisci, ipsam impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim harum debitis ex ut sapiente voluptatum asperiores at. Rem, officia minima neque eum tempore, recusandae perspiciatis ut incidunt, odio ullam quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ducimus labore veritatis quidem reprehenderit natus recusandae amet sapiente necessitatibus! Libero, est! Laboriosam repudiandae harum eaque asperiores ipsum eveniet repellat voluptate?</p>
-
-                <abbr title="">Create stunning images with as much or as little control as you like Thanks to a choice of basic and creative modes.</abbr>
-
-                <br><br>
-
-                <marquee bgcolor="#ccc" loop="-1" scrollamount="5" width="100%">Create stunning images with as much or as little control as you like Thanks to a choice of basic and creative modes.</marquee>
-            </div>
+        <section id="blog">
         </section>
 
-        <section id="about-app" class="section-p1">
-            <h1>Hits Fashion</h1>
-            <div class="video">
-                <img src="img/about/OOTD_20231008_102504_0000.png" alt="">
-            </div>
-        </section>
-
-        <section id="feature" class="section-p1">
-            <div class="fe-box">
-                <img src="img/features/f-1.png" alt="">
-                <h6>Free Shipping</h6>
-            </div>
-            <div class="fe-box">
-                <img src="img/features/f-2.png" alt="">
-                <h6>Online Order</h6>
-            </div>
-            <div class="fe-box">
-                <img src="img/features/f-3.png" alt="">
-                <h6>Save Money</h6>
-            </div>
-            <div class="fe-box">
-                <img src="img/features/f-4.png" alt="">
-                <h6>Promotion</h6>
-            </div>
-            <div class="fe-box">
-                <img src="img/features/f-5.png" alt="">
-                <h6>Happy Sell</h6>
-            </div>
-            <div class="fe-box">
-                <img src="img/features/f-6.png" alt="">
-                <h6>Hits OOTD</h6>
-            </div>
-            
+        <section id="pagination" class="section-p1">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#"><i class="uil uil-arrow-right"></i></a>
         </section>
         <section id="newsletter" class="section-p1 section-m1">
             <div class="newstext">
@@ -97,13 +58,14 @@
             </div>
             <div class="form">
                 <input type="text" placeholder="Your e-mail address">
-                <button class="normal">Sign Up</button>
+                <button class="normal">
+                    <a href="form/index.html">Sign Up</a>
+                </button>
             
             </div>
 
 
         </section>
-       
         <footer class="section-p1">
             <div class="col">
                 <img class="logo" src="img/hits.png" alt="">
@@ -133,8 +95,8 @@
 
             <div class="col">
                 <h4>My Account</h4>
-                <a href="#">Sign In</a>
-                <a href="#">View Cart</a>
+                <a href="form/index.html">Sign In</a>
+                <a href="cart.html">View Cart</a>
                 <a href="#">My Wishlist</a>
                 <a href="#">Track my order</a>
                 <a href="#">Help</a>
@@ -164,7 +126,8 @@
           AOS.init();
         </script>
         <!-- My Javacript -->
-        <script src="script.js"></script>
+        <script src="../script/script.js"></script>
+        <script src="../script/blog.js"></script>
     </body>
 
 </html>
