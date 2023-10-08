@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 title: 'Good Job!',
                 text: 'Account have been created!',
             }).then(() => {
-                window.location.href = '.../FE-Balikpapan-1';
+                window.location.href = './index.html';
             });
         })
         .catch(error => {
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 text: 'Berhasil Login!',
             })
             .then(() => {
-                window.location.href = '.../FE-Balikpapan-1';
+                window.location.href = '../';
             });
         })
         .catch(error => {
