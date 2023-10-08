@@ -1,6 +1,3 @@
-const API_URL = "https://balikpapan-1-api.up.railway.app";
-
-
 //get
 const fetchCarts = async () => {
     const CartsContainer = document.getElementById("coba")

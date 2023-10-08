@@ -1,5 +1,3 @@
-const API_URL = "https://balikpapan-1-api.up.railway.app";
-
 const urlParams = new URLSearchParams(window.location.search);
 const itemId = urlParams.get('id');
 const titleProduct = document.getElementById("title-product");

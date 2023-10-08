@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 title: 'Good Job!',
                 text: 'Account have been created!',
             }).then(() => {
-                window.location.href = '/';
+                window.location.href = 'FE-Balikpapan-1';
             });
         })
         .catch(error => {
@@ -59,28 +59,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //LOGIN
 document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('signup-form');
+    const form = document.getElementById('login-form');
 
     form.addEventListener('submit', function (event) {
         event.preventDefault();
 
-        const name = form.querySelector('input[name="name"]').value;
         const email = form.querySelector('input[name="email"]').value;
         const password = form.querySelector('input[name="password"]').value;
-        const confirmPassword = form.querySelector('input[name="confirmPassword"]').value;
-
-        if (password !== confirmPassword) {
-            alert('Password and confirm password do not match');
-            return;
-        }
 
         const userData = {
-            name: name,
             email: email,
             password: password,
         };
 
-        fetch(`${API_URL}/auth/daftar`, {
+        fetch(`${API_URL}/auth/masuk`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -95,16 +87,18 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         })
         .then(data => {
-            // Save name and email to localStorage
-            // localStorage.setItem('name', data.name);
-            // localStorage.setItem('email', data.email);
+            console.log(data);
+            localStorage.setItem('name', data.data.name);
+            localStorage.setItem('email', data.data.email);
+            localStorage.setItem('id', data.data.id);
         
             Swal.fire({
                 icon: 'success',
                 title: 'Good Job!',
-                text: 'Account have been created!',
-            }).then(() => {
-                window.location.href = '/';
+                text: 'Berhasil Login!',
+            })
+            .then(() => {
+                window.location.href = 'FE-Balikpapan-1';
             });
         })
         .catch(error => {

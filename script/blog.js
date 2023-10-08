@@ -1,5 +1,3 @@
-const API_URL = "https://balikpapan-1-api.up.railway.app";
-
 const fetchBlogs = async () => {
     const BlogsContainer = document.getElementById("blog")
 

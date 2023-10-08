@@ -1,6 +1,7 @@
 const bar = document.getElementById('bar');
 const close = document.getElementById('close');
 const nav = document.getElementById('navbar');
+const API_URL = "https://balikpapan-1-api.up.railway.app";
 
 if (bar){
     bar.addEventListener('click', () =>{

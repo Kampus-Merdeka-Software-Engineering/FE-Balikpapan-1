@@ -1,5 +1,3 @@
-const API_URL = "https://balikpapan-1-api.up.railway.app";
-
     const fetchProducts = async () => {
         const ProductsContainer = document.getElementById("pro-container");
 
@@ -39,3 +37,4 @@ const API_URL = "https://balikpapan-1-api.up.railway.app";
     };
 
     fetchProducts();
+
