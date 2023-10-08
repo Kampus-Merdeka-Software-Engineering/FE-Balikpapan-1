@@ -6,27 +6,27 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hits Shop</title>
-        <!-- Icon Css -->
+        <!-- Css Icon -->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
         <!-- Css Aos -->
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <!-- My Css -->
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
 
         <section id="header">
-            <a href="#"><img src="../img/hits.png" class="logo" alt=""></a>
+            <a href="#"><img src="img/hits.png" class="logo" alt=""></a>
 
             <div>
                 <ul id="navbar">
                     <li><a href="index.html">Home</a></li>
-                    <li><a class="active"  href="shop.html">Shop</a></li>
+                    <li><a href="shop.html">Shop</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="cart.html"><i class="uil uil-shopping-bag"></i></a></li>
+                    <li><a  class="active" href="cart.html"><i class="uil uil-shopping-bag"></i></a></li>
                     <a href="#" id="close"><i class="uil uil-times"></i></a>
                 </ul>
             </div>
@@ -35,37 +35,57 @@
                 <i id="bar" class="uil uil-bars"></i>
             </div>
         </section>
-        <section id="page-header">
+        <section id="page-header" class="about-header">
 
-            <h2 data-aos="fade-right" data-aos-easing="ease-in-sine">#Stay Home</h2>
+            <h2 data-aos="fade-right" data-aos-easing="ease-in-sine">#Let's_talk</h2>
 
-            <p data-aos="fade-left" data-aos-easing="ease-in-sine">save more with coupons and up to 70% off!</p>
+            <p data-aos="fade-left" data-aos-easing="ease-in-sine">LEAVE A MASSAGE. We love to hear from you!</p>
 
         </section>
-        <section id="product1" class="section-p1">
-            <div class="pro-container" id="pro-container">
+        <section id="cart" class="section-p1">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>Remove</td>
+                        <td>Image</td>
+                        <td>Product</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        <td>Subtotal</td>
+                    </tr>
+                </thead>
+                <tbody id="coba">
 
+                </tbody>
+            </table>
+        </section>
+        <section id="cart-add" class="section-p1">
+            <div id="coupon">
+                <h3>Apply Coupon</h3>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+
+            <div id="subtotal">
+                <h3>Cart Total</h3>
+                <table id="total">
+                    <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$ 123</td>
+                    </tr>
+                    <tr>
+                        <td>Shipping</td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td><Strong>Total</Strong></td>
+                        <td><Strong>$ 123</Strong></td>
+                    </tr>
+                </table>
+                <button class="normal">Proceed to checkout</button>
             </div>
         </section>
-
-        <section id="pagination" class="section-p1">
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#"><i class="uil uil-arrow-right"></i></a>
-        </section>
-        <section id="newsletter" class="section-p1 section-m1">
-            <div class="newstext">
-                <h4>Sign Up For Newsletters</h4>
-                <p>Get E-mail updates about our latest shop and <span>special offers.</span>  </p>
-            </div>
-            <div class="form">
-                <input type="text" placeholder="Your e-mail address">
-                <button class="normal">Sign Up</button>
-            
-            </div>
-
-
-        </section>
+       
         <footer class="section-p1">
             <div class="col">
                 <img class="logo" src="img/hits.png" alt="">
@@ -95,7 +115,7 @@
 
             <div class="col">
                 <h4>My Account</h4>
-                <a href="../form/index.html">Sign In</a>
+                <a href="form/index.html">Sign In</a>
                 <a href="cart.html">View Cart</a>
                 <a href="#">My Wishlist</a>
                 <a href="#">Track my order</a>
@@ -106,11 +126,11 @@
             <h4>Install App</h4>
             <p>From App Store or Google Play</p>
             <div class="row">
-                <img src="../img/pay/app.jpg" alt="">
-                <img src="../img/pay/play.jpg" alt="">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
             </div>
             <p>Secured Payment Gateways</p>
-            <img src="../img/pay/pay.png" alt="">
+            <img src="img/pay/pay.png" alt="">
             </div>
 
             <div class="copyright">
@@ -126,9 +146,7 @@
           AOS.init();
         </script>
         <!-- My Javacript -->
-        <script src="../script/script.js"></script>
-        <script src="../script/shop.js"></script>
-
+        <script src="script/script.js"></script>
+        <script src="script/cart.js"></script>
     </body>
-
 </html>
