@@ -1,6 +1,6 @@
 const API_URL = "https://balikpapan-1-api.up.railway.app";
 
-//SIGN IN
+//SIGN UP
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('signup-form');
 
@@ -37,17 +37,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 throw new Error('Registration failed');
             }
         })
-        .then(data => {
-            // Save name and email to localStorage
-            // localStorage.setItem('name', data.name);
-            // localStorage.setItem('email', data.email);
-        
+        .then(data => {        
             Swal.fire({
                 icon: 'success',
                 title: 'Good Job!',
                 text: 'Account have been created!',
             }).then(() => {
-                window.location.href = 'FE-Balikpapan-1';
+                window.location.href = '../';
             });
         })
         .catch(error => {
@@ -98,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 text: 'Berhasil Login!',
             })
             .then(() => {
-                window.location.href = './';
+                window.location.href = '../';
             });
         })
         .catch(error => {
