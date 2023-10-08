@@ -37,15 +37,17 @@ const addToCartButton = document.getElementById("add-to-cart-button");
 
 addToCartButton.addEventListener("click", () => {
     const selectedQuantity = parseInt(document.querySelector("input[type='number']").value, 10);
+    const getId = localStorage.getItem('id')
 
     if (selectedQuantity > 0) {
         const cartData = {
+            userId: getId,
             productId: itemId,
             quantity: selectedQuantity
         };
 
         //POST request
-        fetch(`${detailsAPI}/cart`, {
+        fetch(`${API_URL}/cart`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
