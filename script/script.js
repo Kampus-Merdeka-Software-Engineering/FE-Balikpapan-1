@@ -36,7 +36,18 @@ function slideNext() {
 updateSlides();
 
 // Set up automatic sliding
-setInterval(slideNext, 5000); // Change image every 5 seconds
+setInterval(slideNext, 5000);
+
+
+const remove = document.querySelectorAll('#addedProduct')
+close.forEach(function(el) {
+  el.addEventListener('click', function(e) {
+      e.target.parentElement.style.display = 'none';
+      e.preventDefault();
+      e.stopPropagation();
+  });
+});
+
 
 
 // fetch('http://localhost:3000/api/data')
