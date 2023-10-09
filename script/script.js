@@ -39,14 +39,6 @@ updateSlides();
 setInterval(slideNext, 5000);
 
 
-const remove = document.querySelectorAll('#addedProduct')
-close.forEach(function(el) {
-  el.addEventListener('click', function(e) {
-      e.target.parentElement.style.display = 'none';
-      e.preventDefault();
-      e.stopPropagation();
-  });
-});
 
 
 
